@@ -4,7 +4,7 @@
   align-items: center;
   gap: 15px;
   max-width: 100%;
-  color: $text-color;
+  color: $base-color-text;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
@@ -23,7 +23,7 @@
     opacity: 0.6;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     gap: 20px;
     font-size: 20px;
     line-height: normal;
@@ -38,9 +38,9 @@
   border-radius: 50%;
   border: none;
   outline: 1px solid #cdcdcd;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }
@@ -51,5 +51,5 @@
 }
 
 .label__span--checkbox {
-  color: #000000;
+  color: $base-color;
 }

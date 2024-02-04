@@ -1,8 +1,8 @@
 .button {
   @include flex;
   font-family: $secondary-font;
-  color: $basic-white;
-  background-color: $basic-green;
+  color: $secondary-color;
+  background-color: $base-color-page;
   font-size: 16px;
   line-height: 20px;
   padding: 10px;
@@ -23,15 +23,15 @@
 }
 
 .button--secondary {
-  background-color: $basic-grey;
-  color: $text-color;
+  background-color: $secondary-color-text;
+  color: $base-color-text;
 
   &:hover {
     background-color: #ebebeb;
   }
 
   &:active {
-    color: $text-color;
+    color: $base-color-text;
     background-color: #ebebeb;
   }
 }

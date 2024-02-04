@@ -14,18 +14,18 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: $basic-white;
+  background-color: $secondary-color;
   z-index: 5;
-  animation: nav-appearance 0.4s ease-in;
+  animation: nav-appearance 0.2s ease-in;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: block;
     position: relative;
     min-width: 436px;
     animation: none;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     background-color: transparent;
   }
 }
@@ -44,7 +44,7 @@
 }
 
 .main-nav__list--form {
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }

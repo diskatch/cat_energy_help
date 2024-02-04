@@ -3,12 +3,12 @@
   min-height: 256px;
   width: 280px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     width: 560px;
     min-height: 512px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     grid-row: 1/4;
     grid-column: 2/3;
   }
@@ -28,7 +28,7 @@
   width: 140px;
   overflow-x: hidden;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     width: 280px;
   }
 }

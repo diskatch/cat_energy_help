@@ -2,7 +2,7 @@
   display: flex;
   flex-grow: 1;
   padding: 14px 17px 13px 15px;
-  color: $text-color;
+  color: $base-color-text;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
@@ -11,17 +11,17 @@
   text-transform: uppercase;
   outline: 1px solid #e7e7e7;
   border: none;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
   appearance: textfield;
 
   &::placeholder {
-    color: $text-color;
+    color: $base-color-text;
     font-family: $secondary-font;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: normal;
     }
@@ -36,7 +36,7 @@
     outline: 2px solid #444444;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
     padding: 11px 17px 11px 20px;
@@ -52,7 +52,7 @@
 .input--tel {
   padding: 14px 36px 13px 15px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 11px 36px 11px 20px;
   }
 }

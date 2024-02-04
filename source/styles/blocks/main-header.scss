@@ -1,12 +1,12 @@
 .main-header {
   font-family: $secondary-font;
-  color: $basic-dark;
+  color: $base-color;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 20px 0 25px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     padding: 55px 0 29px;
   }
 }
@@ -14,7 +14,7 @@
 .main-header--underline {
   border-bottom: 1px solid #d9d9d9;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     border: none;
   }
 }
@@ -24,14 +24,14 @@
   margin: 0 auto;
   padding: 13px 21px 11px 20px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 30px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
 }
@@ -41,15 +41,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $basic-white;
+  background-color: $secondary-color;
   z-index: 6;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     justify-content: flex-start;
     gap: 13px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     justify-content: flex-start;
     gap: 14px;
   }
@@ -58,7 +58,7 @@
 .main-header__logo--text {
   margin-left: -8px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin-left: 0;
   }
 }

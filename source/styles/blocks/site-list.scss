@@ -1,18 +1,18 @@
-.nav-list {
+.site-list {
   padding: 0;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     gap: 34px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     max-width: 610px;
   }
 }
 
-.nav-list__item {
+.site-list__item {
   position: relative;
   list-style: none;
 
@@ -26,7 +26,7 @@
     height: 1px;
     background-color: #e6e6e6;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       width: 0;
     }
   }
@@ -36,7 +36,7 @@
   }
 }
 
-.nav-list__item--current {
+.site-list__item--current {
   position: relative;
 
   &::before {
@@ -46,25 +46,25 @@
     top: 50px;
     width: 100%;
     height: 2px;
-    background-color: $basic-green;
+    background-color: $base-color-page;
 
     @media (max-width: 767px) {
       display: none;
     }
 
-    @media (min-width: $desctop) {
+    @media (min-width: $desktop-width) {
       top: 54px;
     }
   }
 }
 
-.nav-list__item--index.nav-list__item--current::before {
-  @media (min-width: $desctop) {
-    background-color: $basic-white;
+.site-list__item--index.site-list__item--current::before {
+  @media (min-width: $desktop-width) {
+    background-color: $secondary-color;
   }
 }
 
-.nav-list__link {
+.site-list__link {
   @include flex;
   min-height: 66px;
   width: 100%;
@@ -73,7 +73,7 @@
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 
   &:hover {
     opacity: 0.6;
@@ -83,18 +83,18 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: normal;
   }
 }
 
-.nav-list__link--disabled {
+.site-list__link--disabled {
   opacity: 0.2;
   cursor: default;
 
@@ -107,15 +107,15 @@
   }
 }
 
-.nav-list__item--current .nav-list__link {
+.site-list__item--current .site-list__link {
   &:hover,
   &:active {
     opacity: 1;
   }
 }
 
-.nav-list__item--index .nav-list__link {
-  @media (min-width: $desctop) {
-    color: $basic-white;
+.site-list__item--index .site-list__link {
+  @media (min-width: $desktop-width) {
+    color: $secondary-color;
   }
 }

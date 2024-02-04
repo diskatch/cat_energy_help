@@ -15,8 +15,8 @@
     left: 0;
     width: 24px;
     height: 2px;
-    background-color: $basic-dark;
-    transition: all 0.3s ease-in;
+    background-color: $base-color;
+    transition: all 0.1s ease-in;
   }
 
   &::after {
@@ -26,11 +26,11 @@
     left: 0;
     width: 24px;
     height: 2px;
-    background-color: $basic-dark;
-    transition: all 0.3s ease-in;
+    background-color: $base-color;
+    transition: all 0.1s ease-in;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -56,8 +56,8 @@
   transform: translateY(-50%);
   width: 24px;
   height: 2px;
-  background-color: $basic-dark;
-  transition: all 0.3s ease-in;
+  background-color: $base-color;
+  transition: all 0.1s ease-in;
 }
 
 .burger--active .burger__span {

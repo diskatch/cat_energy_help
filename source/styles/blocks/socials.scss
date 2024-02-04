@@ -1,4 +1,4 @@
-.social {
+.socials {
   position: relative;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
     height: 1px;
     background-color: #d9d9d9;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
@@ -27,34 +27,34 @@
     bottom: -17px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     align-items: center;
   }
 }
 
-.social__item {
+.socials__item {
   list-style: none;
 }
 
-.social__logo path {
-  transition: all 0.2s ease;
+.socials__logo path {
+  transition: all 0.1s ease;
 }
 
-.social__link:hover .social__logo path,
-.social__link:focus .social__logo path {
-  fill: $basic-green;
+.socials__link:hover .socials__logo path,
+.socials__link:focus .socials__logo path {
+  fill: $base-color-page;
 }
 
-.social__link:focus {
+.socials__link:focus {
   outline: none;
 }
 
-.social__link:active .social__logo path {
-  fill: $basic-green;
+.socials__link:active .socials__logo path {
+  fill: $base-color-page;
   opacity: 0.3;
 }
 
-.social__link--disabled {
+.socials__link--disabled {
   opacity: 0.2;
   cursor: default;
 
@@ -64,7 +64,7 @@
   }
 }
 
-.social__link--disabled:hover .social__logo path,
-.social__link--disabled:active .social__logo path {
+.socials__link--disabled:hover .socials__logo path,
+.socials__link--disabled:active .socials__logo path {
   fill: #666666;
 }

@@ -1,12 +1,12 @@
 .example {
-  background: $dark-grey;
+  background: $third-color-page;
 
-  @media (min-width: $tablet) {
-    background: linear-gradient($basic-white 57%, $dark-grey 57% 100%);
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($secondary-color 57%, $third-color-page 57% 100%);
   }
 
-  @media (min-width: $desctop) {
-    background: linear-gradient($basic-white 31%, $basic-grey 31% 100%);
+  @media (min-width: $desktop-width) {
+    background: linear-gradient($secondary-color 31%, $third-color-page 31% 100%);
   }
 }
 
@@ -14,11 +14,11 @@
   padding: 23px 20px 40px;
   margin: 0 auto;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 45px 30px 95px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     padding: 69px 110px 75px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,24 +29,24 @@
 .example .example__title {
   margin: 0 0 40px 0;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin: 0 0 60px 0;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     margin: 0 0 146px 0;
   }
 }
 
 .example__content-wrapper {
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 83px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     grid-column: 1/2;
     flex-direction: column;
     justify-content: flex-start;
@@ -55,14 +55,14 @@
   }
 }
 
-.example__desc {
+.example__description {
   margin: 0 0 20px 0;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin: 0 0 55px 0;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     grid-column: 1/2;
     width: 433px;
     margin: 0 0 69px 0;
@@ -74,21 +74,21 @@
 }
 
 .example__expenses {
-  color: $basic-dark;
+  color: $base-color;
   text-align: center;
   font-family: $secondary-font;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0 0 20px 0;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     text-align: right;
     font-size: 20px;
     line-height: 20px;
     margin: -2px 0 20px 0;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     display: flex;
     gap: 66px;
     margin: 0;
@@ -98,7 +98,7 @@
 .example__slider {
   margin: 0 0 0 3px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin: 0 auto;
   }
 }
@@ -116,19 +116,19 @@
     width: 4px;
     background-color: #666666;
     transform: translate(-50%, -50%);
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       height: 512px;
     }
   }
 
   &:has(.example__button:hover)::after {
-    background-color: $basic-green;
+    background-color: $base-color-page;
   }
 
   &:has(.example__button:active)::after {
-    background-color: $basic-green;
+    background-color: $base-color-page;
     opacity: 0.6;
   }
 
@@ -155,18 +155,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border: 2px solid #666666;
-  background-color: $basic-white;
+  background-color: $secondary-color;
   border-radius: 50%;
   cursor: e-resize;
   z-index: 5;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 
   &:hover {
-    border: 2px solid $basic-green;
+    border: 2px solid $base-color-page;
   }
 
   &:active {
-    border: 2px solid $basic-green;
+    border: 2px solid $base-color-page;
     opacity: 0.6;
   }
 
@@ -183,11 +183,11 @@
     mask-position: center;
     background-color: #666666;
     z-index: 4;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
   }
 
   &:hover::before {
-    background-color: $basic-green;
+    background-color: $base-color-page;
   }
 }
 
@@ -209,12 +209,12 @@
 }
 
 .example__expenses-span {
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: block;
     margin-top: 9px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     margin-top: 0;
   }
 }

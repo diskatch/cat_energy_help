@@ -4,7 +4,7 @@
 }
 
 .form__field-wrapper {
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -14,13 +14,13 @@
 
 .form__field-wrapper .form__field,
 .form__field-wrapper .form__list {
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
 
 .form__list--padding.form__list {
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     padding: 25px 25px 25px 28px;
     margin: 0;
   }
@@ -49,12 +49,12 @@
     width: 100vw;
     height: 1px;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     gap: 20px;
     border: none;
     padding: 2px 0 72px;
@@ -65,11 +65,11 @@
   border: none;
   padding: 0 0 24px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 0 0 65px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -87,7 +87,7 @@
   margin: 0 0 32px 0;
   padding: 22px 0 0;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px 60px;
@@ -95,7 +95,7 @@
     padding: 0 0 0;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     margin: 0 0 60px 0;
     padding: 0 0 0;
   }
@@ -106,7 +106,7 @@
   padding: 22px 0 20px;
   gap: 13px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 23px 27px 27px;
     outline: 1px solid #e7e7e7;
     margin-bottom: 65px;
@@ -114,11 +114,11 @@
 }
 
 .form__list--extra.form__list--radio {
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     outline: none;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 82px;
@@ -145,7 +145,7 @@
     mask-position: center;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     gap: 15px;
   }
 }
@@ -157,7 +157,7 @@
 
 .form__item--email:has(.input:focus)::before,
 .form__item--tel:has(.input:focus)::before {
-  background-color: $basic-green;
+  background-color: $base-color-page;
 }
 
 .form__item--tel::before {
@@ -189,10 +189,10 @@
   border-radius: 50%;
   width: 13px;
   height: 13px;
-  background-color: $basic-green;
-  transition: all 0.3s ease;
+  background-color: $base-color-page;
+  transition: all 0.1s ease;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
   }
@@ -203,22 +203,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     background-image: url("../../images/icons/stack.svg#tick-tablet");
   }
 }
 
 
 .form__legend {
-  color: $basic-dark;
+  color: $base-color;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 26px;
   padding: 0;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -231,16 +231,16 @@
     content: "\A";
     white-space: pre;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       white-space: normal;
     }
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin: 0 0 76px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     margin: 0 0 76px;
   }
 }
@@ -248,11 +248,11 @@
 .form__legend--comments {
   margin: 0 0 38px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin: 0 0 87px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     margin: 0 0 78px;
   }
 }
@@ -260,21 +260,21 @@
 .form__legend--extra {
   margin: 0 0 12px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin: 0 0 57px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     margin: 0 0 57px;
   }
 }
 
 .form__required {
-  color: $basic-dark;
+  color: $base-color;
   text-align: center;
   line-height: 16px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     text-align: start;
     margin: 0 0 3px -3px;
   }
@@ -294,11 +294,11 @@
 .form__input--textarea {
   margin: 0 0 19px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin: 0 0 59px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     margin: 0 0 65px;
   }
 }
@@ -307,7 +307,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -315,7 +315,7 @@
     padding: 0;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
@@ -326,14 +326,14 @@
 .form__button {
   margin: 0 0 21px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
     margin: 0;
     padding: 14px;
   }
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop-width) {
     grid-column: 1/3;
   }
 }

@@ -10,9 +10,9 @@
     top: 16px;
     width: 100vw;
     height: 2px;
-    background-color: $basic-green;
+    background-color: $base-color-page;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       top: 22px;
     }
   }
@@ -20,7 +20,7 @@
   &::before {
     right: calc(100% + 20px);
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       right: calc(100% + 40px);
     }
   }
@@ -28,7 +28,7 @@
   &::after {
     left: calc(100% + 20px);
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       left: calc(100% + 40px);
     }
   }

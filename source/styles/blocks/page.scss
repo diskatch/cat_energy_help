@@ -9,12 +9,12 @@
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
-  color: $text-color;
-  background-color: $basic-white;
+  color: $base-color-text;
+  background-color: $secondary-color;
   margin: 0 auto;
   height: 100%;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
