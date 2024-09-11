@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Даниил Скороход](https://up.htmlacademy.ru/adaptive/30/user/2387021).
+* Студент: [Ахмедов Арсен](https://up.htmlacademy.ru/adaptive/30/user/2387021).
 * Наставник: [Арсений Березин](https://htmlacademy.ru/profile/bars07).
 
 ---
